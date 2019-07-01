@@ -1,0 +1,89 @@
+
+
+html {
+  width: 100%;
+  margin-bottom: 0px; }
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1em 0;
+  text-align: center;
+  line-height: 1.2; }
+
+.hidden {
+  display: none;
+}
+
+.disabled .column {
+  pointer-events: none; }
+
+.game-info {
+  width: 80%;
+  margin: 0 auto 1em; 
+}
+
+p.error {
+  color: red;
+}
+
+button,
+.replay-button {
+  background:#3b5999;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 20px;
+  text-transform: uppercase;
+  width: 200px;
+  margin-bottom: 1em; }
+
+.cell-wrapper {
+  background: #E3E3E1;
+  border: 1px solid #BFBFBA;
+  padding: 1em;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 15%;
+  position: relative; 
+  cursor: pointer;
+}
+
+.cell {
+  width: 100%;
+  height: 90px;
+  max-height: 90px;
+  background: transparent;
+  border: 1px solid #BFBFBA;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 1.5em;
+  
+  }
+.cell.red {
+  background: #dc2525;
+}
+.cell.blue {
+  background: #05668D;
+}
+
+.start-game-wrapper button,
+.replay-button {
+  margin: 40px 10px;
+}
+
+.prevent-click {
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.5);
+}
